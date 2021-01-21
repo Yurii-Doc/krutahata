@@ -10,7 +10,6 @@ $(document).ready(function () {
     document.querySelector('.menu__body').classList.toggle('active');
     document.querySelector('body').classList.toggle('lock');
   }
-  /*-----*/
 
   $('.foto-slider').slick({
 
