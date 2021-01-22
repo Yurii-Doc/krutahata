@@ -92,6 +92,7 @@ body {
 .menu__link {
 	font-size: 18px;
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .logo-header {
@@ -120,7 +121,7 @@ margin-right: 10px;
 .contact-icon img {
 	margin: 0 2px;
 }
-@media (max-width: 790px) {
+@media (max-width: 960px) {
 	body.lock {
 	overflow: hidden;
 	}
@@ -172,7 +173,7 @@ margin-right: 10px;
 		transition: bottom 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 }
-@media (max-width: 790px) {
+@media (max-width: 960px) {
 	.header {
 		height: 65px;
 	}	
@@ -215,6 +216,7 @@ margin-right: 10px;
 	}
 	.menu__link {
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	.logo-header__img img {
 		width: 45px;
