@@ -5,11 +5,16 @@ $(document).ready(function () {
     //enabled: true
     //},
   });
-  document.querySelector('.icon-menu, .menu__bod').onclick = function () {
+  document.querySelector('.icon-menu, .menu__body').onclick = function () {
     document.querySelector('.icon-menu').classList.toggle('active');
     document.querySelector('.menu__body').classList.toggle('active');
     document.querySelector('body').classList.toggle('lock');
   }
+  // Closes the Responsive Menu on Menu Item Click
+  //Закрывает отзывчивое меню при нажатии пункта меню
+  $('.menu__body ul li a').click(function () {
+    $('.icon-menu:visible').click();
+  });
 
   $('.foto-slider').slick({
 
@@ -65,14 +70,6 @@ $(document).ready(function () {
           dots: false,
         }
       },
-      {
-        // breakpoint: 470,
-        // settings: {
-        //   centerMode: true,
-        //   variableWidth: true,
-        //   slidesToShow: 1,
-        //   arrows: true,
-        // }
       }
     ]
   });
