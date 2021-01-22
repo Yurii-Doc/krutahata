@@ -10,6 +10,9 @@ $(document).ready(function () {
     document.querySelector('.menu__body').classList.toggle('active');
     document.querySelector('body').classList.toggle('lock');
   }
+  document.querySelector('.menu__body ul li a').click = function () {
+    document.querySelector('.icon-menu:visible').click();
+  }
   // Closes the Responsive Menu on Menu Item Click
   //Закрывает отзывчивое меню при нажатии пункта меню
   $('.menu__body ul li a').click(function () {
@@ -70,6 +73,14 @@ $(document).ready(function () {
           dots: false,
         }
       },
+      {
+        // breakpoint: 470,
+        // settings: {
+        //   centerMode: true,
+        //   variableWidth: true,
+        //   slidesToShow: 1,
+        //   arrows: true,
+        // }
       }
     ]
   });
