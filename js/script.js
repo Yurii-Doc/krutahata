@@ -10,77 +10,50 @@ $(document).ready(function () {
     document.querySelector('.menu__body').classList.toggle('active');
     document.querySelector('body').classList.toggle('lock');
   }
-  document.querySelector('.menu__body ul li a').click = function () {
-    document.querySelector('.icon-menu:visible').click();
-  }
+ 
   // Closes the Responsive Menu on Menu Item Click
   //Закрывает отзывчивое меню при нажатии пункта меню
   $('.menu__body ul li a').click(function () {
     $('.icon-menu:visible').click();
   });
 
-  $('.foto-slider').slick({
-
+$('.item-slider').slick({
     arrows: false,
     dots: true,
-    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    pauseOnHover: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    speed: 300,
-    centerMode: false,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+    // pauseOnHover: true, //по умолчанию
     waitForAnimate: false,
+    centerMode: false,
     responsive: [
       {
-        breakpoint: 960,
+        breakpoint: 992,
         settings: {
-          centerMode: true,
-          variableWidth: true,
-          slidesToShow: 4,
           arrows: true,
           dots: false,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: false,
-          variableWidth: true,
+          // variableWidth: true,
           slidesToShow: 3,
-          arrows: true,
-          dots: false,
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 785,
         settings: {
-          centerMode: false,
-          variableWidth: true,
           slidesToShow: 2,
           arrows: true,
           dots: false,
         }
       },
       {
-        breakpoint: 650,
+        breakpoint: 560,
         settings: {
-          centerMode: true,
-          variableWidth: true,
           slidesToShow: 1,
           arrows: true,
           dots: false,
         }
-      },
-      {
-        // breakpoint: 470,
-        // settings: {
-        //   centerMode: true,
-        //   variableWidth: true,
-        //   slidesToShow: 1,
-        //   arrows: true,
-        // }
       }
     ]
   });
