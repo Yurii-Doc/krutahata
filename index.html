@@ -15,7 +15,7 @@
 <body>
 	<div class="wrapper conteiner">
 		<header class="header">
-			<a name="top"></a>
+			<a id="top"></a>
 			<div class="header__top top-header">
 				<div class="top-header__content">
 					<div class="top-header__column">
@@ -27,9 +27,9 @@
 							</div>
 							<nav class="menu__body">
 								<ul class="menu__list">
-									<li><a href="#aboutUs" class="menu__link">О нас</a></li>
-									<li><a href="#services" class="menu__link">Послуги</a></li>
-									<li><a href="#gallery" class="menu__link">Фотогалерея</a></li>
+									<li><a href="#aboutUs" class="menu__link page-scroll">О нас</a></li>
+									<li><a href="#services" class="menu__link page-scroll">Послуги</a></li>
+									<li><a href="#gallery" class="menu__link page-scroll">Фотогалерея</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -48,8 +48,7 @@
 						<div class="top-header__contacts contacts-header">
 							<div class="contacts-header__contact contact-icon">
 								<a target="_blank" href="https://www.facebook.com/dotsenko.yura/">
-									<img title="Facebook" alt="Facebook" src="images/header/facebook.png" width="35"
-										height="35" />
+									<img title="Facebook" alt="Facebook" src="images/header/facebook.png" />
 								</a>
 								<a target="_blank" href="viber://chat?number=%2B380936383689">
 									<img title="Viber" alt="Viber" src="images/header/vaiber.png" width="35" height="35" />
@@ -72,33 +71,36 @@
 				<div class="content-about__row">
 					<div class="content-about__top">
 						<div class="content-about__slogan roboto">
-							<h1>Крута хата</h1>
-							<p>Для людей,</p>
-							<p>як для себе</p>
-							<p>тільки найкраще!</p>
+							<h1 class="slogan-title _anim-items _anim-no-hide">Крута хата</h1>
+							<div class="slogan-text _anim-items _anim-no-hide">
+								<p>Для людей,</p>
+								<p>як для себе</p>
+								<p>тільки найкраще!</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="content-about__row">
 					<blockquote class="content-about__bottom botoom-text">
-						<a name="aboutUs"></a>
+						<a id="aboutUs"></a>
 						<p class="botoom-text-top">Пропонуємо комплексний ремонт квартир під ключ в Чернігові. Купівля
 							квартири в новобудові— перший крок до власного житла. Але щоб квартиру з голими стінами перетворити
-							в комфортне затишне житло, не
-							обійтися без комплексного ремонту.</p>
+							в комфортне затишне житло, не обійтися без комплексного ремонту.</p>
 
 						<p class="botoom-text-botoom">Хочете отримати затишну квартиру з продуманим плануванням і дизайном?
 							Довірте ремонт вашої квартири або будинку професіоналам. До кожного проекту ми підходимо креативно
-							та індивідуально, враховуючи
-							ваші бажання та ідеї. Можливе виконання робіт як за проектом, так і без нього.
+							та індивідуально, враховуючи ваші бажання та ідеї. Можливе виконання робіт як за проектом, так і
+							без нього.
 						</p>
 					</blockquote>
 				</div>
 			</div>
 		</div>
+		<div class="services__title">
+			<a id="services">НАШІ ПОСЛУГИ</a>
+		</div>
 		<div class="services">
-			<div class="services__title"><a name="services">Наші послуги</a></div>
-			<div class="services__content content-services">
+			<div class="services__content content-services _anim-items">
 				<details class="content-services__service service">
 					<summary class="content-services__title">
 						Демонтажні роботи
@@ -231,7 +233,7 @@
 			</div>
 		</div>
 		<div class="slider">
-			<a name="gallery"></a>
+			<a id="gallery"></a>
 			<div class="sliders__title">ДИЗАЙН</div>
 			<div class="slider__item item-slider">
 				<div class="item-slider__foto">
@@ -305,7 +307,7 @@
 		<footer class="footer">
 			<div class="footer__content content-footer">
 				<div class="content-footer__logo">
-					<a href="#top"><img src="images/header/logo.png"></a>
+					<a href="#top" class="page-scroll"><img src="images/header/logo.png"></a>
 					<div>Крута хата</div>
 				</div>
 				<div class="footer__contacts contacts-footer">
