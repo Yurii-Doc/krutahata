@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         let animItemPoint = window.innerHeight - animItemHeight / animStart;
         if (animItemHeight > window.innerHeight) {
-          animItemPoint = window.innerHeight - awindow.innerHeight / animStart
+          animItemPoint = window.innerHeight - window.innerHeight / animStart
         }
 
         if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
